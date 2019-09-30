@@ -1,0 +1,25 @@
+Arren De Manuel - A15697684
+Brian Solis - A15699314
+
+1) BST was faster for insert
+2) BST was also faster for find
+3) A BST was much faster than a BSA in both tests by a large margin.  This could be the fact that a BSA might have to iterate through 
+	its entire list just to find and insert an element.
+4)
+   The validation error increases
+   For example calling with training file: "training.txt" and input: "validation.txt"
+   
+	K: 5, Validation Error: 0.095
+	K: 10, Validation Error: 0.102
+	K: 15, Validation Error: 0.108
+	K: 20, Validation Error: 0.109
+	K: 25, Validation Error: 0.123
+	K: 30, Validation Error: 0.13
+5) With that in mind, the lowest error would be at k = 0
+6) Training data size: 10000; Test data size: 10000; Dimension size: 2; K: 1; Time taken for KD tree to find KNN: 104394094 milliseconds
+Training data size: 10000; Test data size: 10000; Dimension size: 2; K: 1; Time taken for brute force approach to find KNN: 87253856234 milliseconds
+ The bruteforce is worst by a factor of 835 .
+7)  We found that increasing the dimensions increases the time for KDT faster than it increases the time for bruteForce.  However, we were not able
+to get a sure output because of time constraints.
+8)  Well playing with the dimensions both increased the time for KDT and bruteForce, but it seemed to be that the factor in which bruteForce was worse
+was lessening. 
